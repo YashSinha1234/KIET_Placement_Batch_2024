@@ -1,18 +1,16 @@
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& yash, int target) {
-        vector<int> ans;
-        
-        for (int i = 0; i < yash.size(); i++) {
-            for (int j = i + 1; j < yash.size(); j++) {
-                if ((yash[i]+yash[j]) == target) {
-                    ans.push_back(i);
-                    ans.push_back(j);
-                    break;
-                }
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> yash;
+        int len = nums.size();
+        for (int i = 0; i < len; i++) {
+            int n = nums[i];
+            int second_ele = target - n;
+            if (yash.count(second_ele)) {
+                return {yash[second_ele], i};
             }
+            yash[n] = i;
         }
-        
-        return ans;
+        return {};
     }
 };
