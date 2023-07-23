@@ -1,5 +1,5 @@
 # KIET_Placement_Batch_2024
-Collection of LeetCode questions to ace the coding interview!
+Striver SDE sheet challenge
 # Name: Yash Sinha
 # Roll No.: 2000290100196
 # Sem: VII
